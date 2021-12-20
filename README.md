@@ -27,13 +27,13 @@ ProS-GNN ΔΔG  prediction is accomplished through a multi-step protocol. Each s
 Clone ProS-GNN to a local directory.
 
 ```
-git clone https://github.com/gersteinlab/ThermoNet.git
+git clone https://github.com/HongzhouTang/Pros-GNN.git
 ```
 
 ### Install Rosetta 3
 
 1. Go to https://els2.comotion.uw.edu/product/rosetta to get an academic license for Rosetta.
-2. Download Rosetta 3.10 (source + binaries for Linux) from this site: https://www.rosettacommons.org/software/license-and-download
+2. Download Rosetta 3.13 (source + binaries for Linux) from this site: https://www.rosettacommons.org/software/license-and-download
 3. Extract the tarball to a local directory from which Rosetta binaries can be called by specifying their full path.
 
 # Use the ProS-GNN
@@ -56,7 +56,7 @@ rosetta_relax.py --rosetta-bin relax.static.linuxgccrelease -l VARIANT_LIST --ba
 where VARIANT_LIST is a given file in which each line is a given variant in the format XXXXX POS WT MUT. For example, 1a5eA 37 L S. 
 In order to better distinguish the mutation file from the wild file, we renamed the mutation file to XXXX_mutation.pdb and the wild file to XXXX_wild.pdb.Such as 1a5eA_L37S_mutation.pdb  and  1a5eA_L37S_wild.pdb
 
-3. Run the following command to generated the PDB files containing only the structural information of the mutation:
+3. Run the following command to generated the PDB files containing only the structural information of the mutation position:
 
 ```
 cd mutation_pdb
