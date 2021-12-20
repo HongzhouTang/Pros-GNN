@@ -27,7 +27,7 @@ ProS-GNN ΔΔG  prediction is accomplished through a multi-step protocol. Each s
 Clone ProS-GNN to a local directory.
 
 ```
-git clone https://github.com/gersteinlab/ThermoNet.git
+git clone https://github.com/HongzhouTang/Pros-GNN.git
 ```
 
 ### Install Rosetta 3
