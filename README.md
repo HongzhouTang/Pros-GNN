@@ -4,7 +4,7 @@ This repo contains the code for our paper " ProS-GNN: Predicting effects of muta
 
 by Shuyu Wang*, Hongzhou Tang
 
-Here we pioneered a deep graph neural network based method for predicting protein stability change upon mutation. After mutant part data extraction, the model encoded the molecular structure-property relationships using message passing and incorporated raw atom coordinates to enable spatial insights into the molecular systems. We trained the model using the S2648 and S3412 datasets, and tested on the Ssym and Myoglobin datasets. Compared to existing methods, our proposed method showed competitive high performance in data generalization and bias suppression with ultra-low time consumption.
+Here we pioneered a deep graph neural network based method for predicting protein stability change upon mutation. After mutant part data extraction, the model encoded the molecular structure-property relationships using message passing and incorporated raw atom coordinates to enable spatial insights into the molecular systems. We trained the model using the S2648 , and tested on the Ssym, Myoglobin and Broom datasets. Compared to existing methods, our proposed method showed competitive high performance in data generalization and bias suppression with ultra-low time consumption.
 
 ![image](https://github.com/shuyu-wang/ProS-GNN/raw/main/fig1(A).png)
 
@@ -83,7 +83,9 @@ cd trian
 python train.py
 ```
 
-5. The model trained can be use to predict the Ssym dataset. Run the following comand to predict:
+5. The model trained can be use to predict the Ssym dataset.
+You need to move the trained model to the folder under the predict.
+Run the following comand to predict:
 
 ```
 cd ..
@@ -95,4 +97,4 @@ cd predict
 python predict.py
 ```
 
-(You need to move the model trained to the predict floder.)
+
